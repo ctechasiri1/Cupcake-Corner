@@ -3,23 +3,47 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		5186677F2D45FE3600941E23 /* Cupcake_CornerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5186677E2D45FE3600941E23 /* Cupcake_CornerApp.swift */; };
-		518667812D45FE3600941E23 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518667802D45FE3600941E23 /* ContentView.swift */; };
 		518667832D45FE3800941E23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 518667822D45FE3800941E23 /* Assets.xcassets */; };
 		518667862D45FE3800941E23 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 518667852D45FE3800941E23 /* Preview Assets.xcassets */; };
+		5186678F2D46011F00941E23 /* CodableURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5186678E2D46011F00941E23 /* CodableURLSession.swift */; };
+		518667912D46025700941E23 /* LoadingImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518667902D46025700941E23 /* LoadingImage.swift */; };
+		518667932D46030400941E23 /* Validating&DisablingForms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518667922D46030400941E23 /* Validating&DisablingForms.swift */; };
+		518667952D4603DB00941E23 /* CodableConformance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518667942D4603DB00941E23 /* CodableConformance.swift */; };
+		518667972D4603E800941E23 /* HapticEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518667962D4603E800941E23 /* HapticEffects.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5186677B2D45FE3600941E23 /* Cupcake Corner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cupcake Corner.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5186677E2D45FE3600941E23 /* Cupcake_CornerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cupcake_CornerApp.swift; sourceTree = "<group>"; };
-		518667802D45FE3600941E23 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		518667822D45FE3800941E23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		518667852D45FE3800941E23 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5186678E2D46011F00941E23 /* CodableURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableURLSession.swift; sourceTree = "<group>"; };
+		518667902D46025700941E23 /* LoadingImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingImage.swift; sourceTree = "<group>"; };
+		518667922D46030400941E23 /* Validating&DisablingForms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Validating&DisablingForms.swift"; sourceTree = "<group>"; };
+		518667942D4603DB00941E23 /* CodableConformance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableConformance.swift; sourceTree = "<group>"; };
+		518667962D4603E800941E23 /* HapticEffects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticEffects.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		515C18F22DC4488E004BCD85 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				CupcakeCornerViewModel.swift,
+			);
+			target = 5186677A2D45FE3600941E23 /* Cupcake Corner */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		515C18EB2DC446F1004BCD85 /* View */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = View; sourceTree = "<group>"; };
+		515C18EE2DC44734004BCD85 /* Model */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Model; sourceTree = "<group>"; };
+		515C18EF2DC4473F004BCD85 /* ViewModel */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (515C18F22DC4488E004BCD85 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = ViewModel; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		518667782D45FE3600941E23 /* Frameworks */ = {
@@ -52,7 +76,10 @@
 			isa = PBXGroup;
 			children = (
 				5186677E2D45FE3600941E23 /* Cupcake_CornerApp.swift */,
-				518667802D45FE3600941E23 /* ContentView.swift */,
+				515C18EF2DC4473F004BCD85 /* ViewModel */,
+				515C18EB2DC446F1004BCD85 /* View */,
+				515C18EE2DC44734004BCD85 /* Model */,
+				5186679A2D460DBE00941E23 /* Learnings */,
 				518667822D45FE3800941E23 /* Assets.xcassets */,
 				518667842D45FE3800941E23 /* Preview Content */,
 			);
@@ -65,6 +92,18 @@
 				518667852D45FE3800941E23 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5186679A2D460DBE00941E23 /* Learnings */ = {
+			isa = PBXGroup;
+			children = (
+				5186678E2D46011F00941E23 /* CodableURLSession.swift */,
+				518667902D46025700941E23 /* LoadingImage.swift */,
+				518667922D46030400941E23 /* Validating&DisablingForms.swift */,
+				518667942D4603DB00941E23 /* CodableConformance.swift */,
+				518667962D4603E800941E23 /* HapticEffects.swift */,
+			);
+			path = Learnings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -81,6 +120,10 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				515C18EB2DC446F1004BCD85 /* View */,
+				515C18EE2DC44734004BCD85 /* Model */,
 			);
 			name = "Cupcake Corner";
 			productName = "Cupcake Corner";
@@ -137,8 +180,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				518667812D45FE3600941E23 /* ContentView.swift in Sources */,
+				518667972D4603E800941E23 /* HapticEffects.swift in Sources */,
+				518667932D46030400941E23 /* Validating&DisablingForms.swift in Sources */,
 				5186677F2D45FE3600941E23 /* Cupcake_CornerApp.swift in Sources */,
+				518667912D46025700941E23 /* LoadingImage.swift in Sources */,
+				518667952D4603DB00941E23 /* CodableConformance.swift in Sources */,
+				5186678F2D46011F00941E23 /* CodableURLSession.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
